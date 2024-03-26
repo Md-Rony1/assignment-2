@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@400,800,900&display=swap');
+
+
+/* Shared style */
+* {
+  font-family: "Work Sans", sans-serif;
+}
+
+.text-orange {
+  color: rgb(255, 84, 0);
+}
+
+.button-color {
+  background-color: rgb(255, 84, 0);
+  color: white;
+}
+
+/* --------------------- */
+
+/* nav section */
+header {
+  margin: 60px auto;
+  padding: 0 100px;
+  max-width: 1400px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-3bar{
+  display: none;
+}
+
+.logo-name {
+  display: flex;
+  gap: 17px;
+  align-items: center;
+}
+
+.logo-name>h3 {
+  font-weight: 800;
+  font-size: 2.25rem;
+  margin: 0;
+  color: rgb(19, 19, 24);
+}
+
+.nav-options>ul {
+  list-style: none;
+  display: flex;
+  gap: 44px;
+  font-weight: 400;
+  font-size: 1.12rem;
+  color: rgb(66, 66, 71);
+}
+
+
+/* banner section */
+.banner-section {
+  margin: 50px 0;
+  width: 100%;
+  height: 500px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(Images/banner.png);
+  background: linear-gradient(180.00deg, rgba(19, 19, 24, 0.8), rgba(19, 19, 24, 0) 100%), url(Images/banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  
+
+}
+
+.banner-container {
+  width: 70%;
+  text-align: center;
+}
+
+.banner-title {
+  font-weight: 800;
+  font-size: 4rem;
+  color: white;
+  margin: 0;
+}
+
+.banner-discription {
+  font-weight: 400;
+  font-size: 1rem;
+  color: white;
+  max-width: 675px;
+  margin: 24px auto;
+}
+
+.search-div {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.3);
+  margin-top: 48px;
+}
+
+.search-box {
+  width: 21%;
+  padding: 16px;
+  margin: 16px;
+  border-radius: 8px;
+  border: none;
+  font-weight: 400;
+  font-size: 1rem;
+  color: rgba(19, 19, 24, 0.5);
+  
+}
+
+.search-div>input{
+  width: 17.656%;
+}
+
+.search-div>button {
+  font-weight: 700;
+  font-size: 1rem;
+  color: white;
+}
+
+
+
+
+
+/* responsive media querry */
+@media screen and (max-width:600px) {
+
+  header{
+    padding: 20px;
+  }
+  
+  .banner-section{
+    margin-top: 20px;
+  }
+
+  .nav-options{
+    display: none;
+  }
+
+  .nav-3bar{
+    display: block;
+  }
+
+  .logo-name>h3{
+    font-size: 1.4rem;
+  }
+
+  .logo-name>img {
+    width: 30px;
+  }
+
+  .banner-container{
+    width: 85.5%;
+  }
+
+  .banner-title{
+    font-size: 1.5rem;
+  }
+
+  .banner-discription{
+    font-size: 0.85rem;
+  }
+
+  .search-div{
+    flex-direction: column;
+  }
+
+  .search-box{
+    width: 90%;
+    margin: 8px;
+  }
+
+  .search-div>input{
+    width: 79.5532%;
+  }
+  
+
+}
+
+
+
+/* medium screen */
+@media screen and (min-width: 600px) and (max-width: 1000px) {
+
+  nav,
+  .search-div{
+    flex-direction: column;
+  }
+
+  .banner-title{
+    font-size: 2rem;
+  }
+
+  .banner-discription{
+    font-size: 0.85rem;
+  }
+
+  
+
+}
+
+
