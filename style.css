@@ -455,6 +455,56 @@ section {
 }
 
 
+/* footer section */
+footer{
+  height: 500px;
+  background: rgba(19, 19, 24, 0.05);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-section{
+  max-width: 770px;
+  text-align: center;
+}
+
+.company-logo-footer{
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+}
+
+.company-logo-footer>img{
+  width: 40px;
+}
+
+.company-logo-footer>h3{
+  font-weight: 800;
+  font-size: 2rem;
+  color: rgb(19, 19, 24);
+  margin-bottom: 16px;
+}
+
+.company-logo-footer span{
+  color: rgb(255, 84, 0);
+}
+
+.footer-social-logo>img{
+  width: 20px;
+  padding-right: 25px;
+  margin-top: 16px;
+  margin-bottom: 100px;
+}
+
+.footer-section>h6{
+  font-weight: 300;
+  font-size: 1rem;
+  color: rgb(19, 19, 24);
+}
+
+
 /* ---------------Media----------------------
 ---------------Media----------------------
 ---------------Media----------------------
@@ -493,16 +543,29 @@ section {
   .search-div,
   .popular-tour-section,
   .reason-card-div-1,
-  .place-suggest-section {
+  .place-suggest-section,
+  .newsletter-section {
     flex-direction: column;
   }
 
-  .secton-title {
+  .secton-title,
+  .tour-section-title,
+  .newsletter-content>h3 {
     font-size: 1.25rem;
   }
 
-  .discription-font {
+  .discription-font,
+  .banner-discription,
+  .tour-discription  {
     font-size: 0.875rem;
+  }
+
+  .tour-content,
+  .popular-tour-section>img ,
+  .reason-card,
+  .place-suggest-section>div,
+  .newsletter-images{
+    width: 100%;
   }
 
   /* shared style */
@@ -531,11 +594,6 @@ section {
     font-size: 1.5rem;
   }
 
-  .banner-discription,
-  .tour-discription {
-    font-size: 0.857rem;
-  }
-
   .search-box {
     width: 90%;
     margin: 8px;
@@ -545,26 +603,14 @@ section {
     width: 79.5532%;
   }
 
-  .tour-section-title {
-    font-size: 1.25rem;
-  }
-
-  .tour-content {
-    width: 100%;
-  }
-
-  .popular-tour-section>img {
-    width: 100%;
+  .popular-tour-section>img,
+  .suggest-place-img,
+  .newsletter-images {
     margin-top: 24px;
   }
 
   .reason-content {
     width: 90%;
-  }
-
-  .reason-card,
-  .place-suggest-section>div {
-    width: 100%;
   }
 
   #reason-card-1 {
@@ -583,8 +629,24 @@ section {
     gap: 20px;
   }
 
-  .suggest-place-img {
-    margin-top: 24px;
+  .newsletter-content{
+    width: calc(100% - 80px);
+  }
+
+  footer{
+    height: 310px;
+  }
+
+  .company-logo-footer>img{
+    width: 29px;
+  }
+
+  .company-logo-footer>h3{
+    font-weight: 21.5;
+  }
+
+  .footer-social-logo>img{
+    margin-bottom: 48px;
   }
 
 
